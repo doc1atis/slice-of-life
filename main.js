@@ -31,30 +31,35 @@ console.log(`### Challenge #3`);
 // first `e` replaced with an `i` and the `o` replaced with `y`. Hint: one way
 // to do this involves repeating the same operation twice, though with
 // different arguments.
-
+console.log(`Hello, there.`.replace("e", "i"));
 console.log(`### Challenge #4`);
 
 // For the string `Hello, there.`, console out the same string but with _every_
 // `e` replaced by an `o`. If you got this far, you are thoro af.
+console.log(`Hello, there.`.replace(/e/g, "o"));
 
 console.log(`# Slice Challenges`);
 
 console.log(`### Challenge #5`);
 
 // For the string `Watch that speedbump!`, console out the first 5 characters.
+console.log(`Watch that speedbump!`.slice(0, 5));
 
 console.log(`### Challenge #6`);
 
 // For the string `Watch that speedbump!`, console out the first 6 characters.
-
+console.log(`Watch that speedbump!`.slice(0, 6));
 console.log(`### Challenge #7`);
 
 // For the string `Watch that speedbump!`, console out everything _except for_ the last 4
 // characters.
-
+const st = `Watch that speedbump!`;
+console.log(st.slice(0, st.length - 4));
 console.log(`### Challenge #8`);
 
 // For the strings `Hello, there.` and `Watch that speedbump!`, console out the
 // last four characters of each one. There should be _two_ strings consoled for this one,
 // but they should both be created using `slice` with the _exact_ same
 // argument(s).
+console.log(`Hello, there.`.slice(-4));
+console.log(`Watch that speedbump!`.slice(-4));
